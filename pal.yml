@@ -1,4 +1,1 @@
-ach:
-  adapter: US Bank
-credit:
-  adapter: CPA
+greeting: Hello World
