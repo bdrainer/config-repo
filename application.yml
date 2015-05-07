@@ -1,2 +1,16 @@
 info:
-  description: Spring Cloud Samples
+  description: Brett Wade Garrett Spring Cloud
+  
+spring:
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/"
+  instance:
+    hostname: "${CF_INSTANCE_IP:localhost}"
+    nonSecurePort: "${CF_INSTANCE_PORT:${PORT:${server.port:8888}}}"
+
