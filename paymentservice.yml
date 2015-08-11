@@ -1,4 +1,4 @@
 server:
   port: 8101
   
-greeting:  Hello, PaymentService in the house
+greeting:  Hello, PaymentService (GITHUB)

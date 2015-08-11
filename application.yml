@@ -3,4 +3,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-global.message: CTS Nextcity Nexcity Nexcity
+global.message: CTS Nextcity [GITHUB]

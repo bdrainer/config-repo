@@ -1,6 +1,12 @@
-info:
-  component: Zuul Server
+server:
+  port: 8765
   
+zuul:
+  routes:
+    patronservice: /patron/**
+    paymentservice: /pay/**
+    accountservice: /acct/**
+
 endpoints:
   restart:
     enabled: true
@@ -8,15 +14,6 @@ endpoints:
     enabled: true
   health:
     sensitive: false
-
-zuul:
-  routes:
-    patronservice: /patron/**
-    paymentservice: /pay/**
-    accountservice: /acct/**
-
-server:
-  port: 8765
 
 logging:
   level:
