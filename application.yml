@@ -1,10 +1,6 @@
-info:
-  description: Brett Wade Garrett Spring Cloud
-  
-spring:
-  cloud:
-    config:
-      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
-      discovery:
-        enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
+global.message: CTS Nextcity Nexcity Nexcity
