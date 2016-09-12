@@ -15,4 +15,4 @@ connection:
 gearlaunch:
   vendor:
     wrapper:
-      poweredBy: ${POWERED_BY|Powered by GearLaunch}
+      poweredBy: ${POWERED_BY:Powered by GearLaunch}

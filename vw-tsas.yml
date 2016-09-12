@@ -1,7 +1,8 @@
 server:
-  port: 8101
+  port: ${SERVER_PORT:8101}
   
 gearlaunch:
   vendor:
     wrapper:
-      message: Greetings from T-Shirt and Sons
+      message: Greetings from T-Shirt and Sons.
+      secretKey: this-is-super-secret

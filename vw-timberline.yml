@@ -1,0 +1,9 @@
+server:
+  port: ${SERVER_PORT:8201}
+  
+gearlaunch:
+  vendor:
+    wrapper:
+      poweredBy: Powered by GearLaunch incahoots with Timberline
+      message: Greetings from T-Shirt and Sons.  Happy Labor Day!
+      secretKey: this-is-super-secret
