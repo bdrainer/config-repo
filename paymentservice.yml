@@ -1,4 +1,0 @@
-server:
-  port: 8101
-  
-greeting:  Hello, PaymentService (GITHUB)

@@ -3,4 +3,16 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-global.message: CTS Nextcity [GITHUB]
+connection:
+  info:
+    postgres:
+      user: test
+      pass: password
+    rabbitmq:
+      user: test
+      pass: password
+      
+gearlaunch:
+  vendor:
+    wrapper:
+      poweredBy: ${POWERED_BY|Powered by GearLaunch}
