@@ -1,6 +1,4 @@
-server:
-  port: ${SERVER_PORT:8201}
-  
+
 spring:
 
   data:
@@ -9,15 +7,6 @@ spring:
       port: 27017
       database: "vendor-timberline"
       
-  jackson:
-    mapper:
-      DEFAULT_VIEW_INCLUSION: false
-    deserialization:
-      FAIL_ON_UNKNOWN_PROPERTIES: false
-    serialization:
-      FAIL_ON_EMPTY_BEANS: false
-      FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS: false
-    serialization-inclusion: NON_NULL
 
 #test vendor API configuration.  Override with an application-production.yml and activate "production" profile.
 vendor:
@@ -27,4 +16,4 @@ vendor:
   submissionDelay: 30000 # DB polling delay for posting to Vendor API (milliseconds)
   
 gearlaunch:
-  mailhost: "mail.timberline.gearlaunch.com"
+  mailhost: "PRODUCTION.mail.timberline.gearlaunch.com"

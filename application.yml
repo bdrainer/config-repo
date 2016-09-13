@@ -1,18 +1,17 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: ${GL_DISCOVERY_SERVICE:http://localhost:8761/eureka/}
 
 connection:
   info:
-    postgres:
-      user: test
-      pass: password
     rabbitmq:
+      host: http://rabbitmq
       user: test
-      pass: password
+      password: password
       
 gearlaunch:
-  vendor:
-    wrapper:
-      poweredBy: ${POWERED_BY:Powered by GearLaunch}
+  mailhost: "mail.gearlaunch.com"
+      
+
+      

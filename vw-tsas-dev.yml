@@ -1,8 +1,0 @@
-server:
-  port: ${SERVER_PORT:8101}
-  
-gearlaunch:
-  vendor:
-    wrapper:
-      message: DEV Greetings from T-Shirt and Sons. DEV
-      secretKey: my-dev-secret-key
