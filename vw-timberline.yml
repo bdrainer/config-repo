@@ -2,13 +2,11 @@ server:
   port: ${SERVER_PORT:8201}
   
 spring:
-
   data:
     mongodb:
       host: "127.0.0.1"
       port: 27017
       database: "vendor-timberline"
-      
   jackson:
     mapper:
       DEFAULT_VIEW_INCLUSION: false
@@ -19,7 +17,6 @@ spring:
       FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS: false
     serialization-inclusion: NON_NULL
 
-#test vendor API configuration.  Override with an application-production.yml and activate "production" profile.
 vendor:
   affiliateId: "CT_0030954"
   ordersSubmissionUrl: "http://api.staging.co-timber.com/v15/submit"
@@ -27,4 +24,4 @@ vendor:
   submissionDelay: 30000 # DB polling delay for posting to Vendor API (milliseconds)
   
 gearlaunch:
-  mailhost: "mail.timberline.gearlaunch.com"
+  mailhost: "TEST.mail.timberline.gearlaunch.com"

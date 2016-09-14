@@ -1,18 +1,14 @@
-
 spring:
-
   data:
     mongodb:
       host: "127.0.0.1"
       port: 27017
-      database: "vendor-timberline"
-      
-
-#test vendor API configuration.  Override with an application-production.yml and activate "production" profile.
+      database: "vendor-timberline-prod"
+            
 vendor:
-  affiliateId: "CT_0030954"
-  ordersSubmissionUrl: "http://api.staging.co-timber.com/v15/submit"
-  ordersQueryUrl: "http://api.staging.co-timber.com/api/orders/{orderId}/status?affiliate={affiliateId}"
+  affiliateId: "CT_productionId"
+  ordersSubmissionUrl: "http://api.production.co-timber.com/v16/submit"
+  ordersQueryUrl: "http://api.production.co-timber.com/api/orders/{orderId}/status?affiliate={affiliateId}"
   submissionDelay: 30000 # DB polling delay for posting to Vendor API (milliseconds)
   
 gearlaunch:
