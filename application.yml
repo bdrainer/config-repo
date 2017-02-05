@@ -1,17 +1,4 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${GL_DISCOVERY_SERVICE:http://localhost:8761/eureka/}
-
-connection:
-  info:
-    rabbitmq:
-      host: http://rabbitmq
-      user: test
-      password: password
-      
-gearlaunch:
-  mailhost: "mail.gearlaunch.com"
-      
-
-      
+vendor:
+  api:
+    timberline:
+      url: ${API_URL_TIMBERLINE:http://localhost:8201}
